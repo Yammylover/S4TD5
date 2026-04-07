@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex1.js</title>
+    <script>
+        function writewrotewritten(nameofthewill){
+            willow=document.document.getElementById("nomid");
+            willow.innerHTML="Bonjour"+nameofthewill;
+        }
+        let reponse,content;
+        do {
+            reponse=prompt("Quel est votre nom?");
+        } while(reponse === '' || reponse === null);
+        console.log(reponse);
+        console.log("1");
+        alert("Bonjour "+reponse);
+        //writewrotewritten(reponse);
+        /*Il n'est pas possible de modifier innerhtml lors de la création de la page; parce que le code est exéctué de façon linéaire,
+        et "nomid" n'existe pas au moment où la variable qui en a besoin est appelée. Mieux vaut utilisé un bouton,ou un fichier externe*/
+    </script>
+</head>
+<body>
+    <div id="nomid">blablabla</div>
+    
+</body>
+</html>
