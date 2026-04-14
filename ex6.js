@@ -20,6 +20,9 @@ function togglePassword(){
     let div=document.getElementById("compteur");
     div.innerHTML += "<div id=\"time\"></div>";
     timer=document.getElementById("time");
+    console.log(time);
+    timer.innerHTML=time;
+    time--;
     const timeisrunningout = setInterval( ( ) =>{
             console.log(time);
             timer.innerHTML=time;
@@ -30,5 +33,5 @@ function togglePassword(){
         clearInterval(timeisrunningout);
         input.type="password";
         timer.innerHTML='';
-    },6000);
+    },5000);
 }
